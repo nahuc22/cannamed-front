@@ -1,0 +1,88 @@
+.sheetContent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  color: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  overflow-y: auto;
+  z-index: 9999;
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slideOut {
+  animation: slideOut 0.3s ease-in forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.formGrid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description,
+.input,
+.label,
+.title
+{
+  font-family: 'Inter', sans-serif;
+  color: black;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+  color: black;
+}
+
+.label {
+  text-align: right;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+.error{
+  font-family: 'Inter', sans-serif;
+  color:red;
+}
+.button{
+  background-color: black;
+}

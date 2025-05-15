@@ -1,0 +1,140 @@
+.sheetOverlay {
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.sheet {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  gap: 1rem;
+  position: relative; /* importante */
+}
+.cartContent {
+  max-height: 60vh; /* Puedes ajustar según necesites */
+  overflow-y: auto;
+  border: 3px white solid;
+  border-radius: 15px;
+}
+
+.cartList {
+  width: 95%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-y: auto;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.cartList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cartList::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 100%, 99%);
+  border-radius: 3px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px rgba(105, 95, 95, 0.527) solid;
+}
+
+.cartItemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.cartItemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  padding-right: 0.5rem;
+}
+
+.quantityControls button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.quantityControls span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  margin-left: auto;
+  align-self: center;
+  transition: color 0.2s;
+}
+
+.removeButton:hover {
+  color: #b91c1c;
+}
+
+.cartTotal {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.exitButton {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #d9534f;
+  color: white;
+  padding: 14px 24px;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.exitButton:hover {
+  background-color: #c9302c;
+}
+
+.payButton {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 24px;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.payButton:hover {
+  background-color: #0056b3;
+}

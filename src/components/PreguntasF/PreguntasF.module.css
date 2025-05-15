@@ -1,0 +1,81 @@
+/* PreguntasF.module.css */
+.h2 {
+    text-align:  center;
+}
+.preguntasFrecuentes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left {
+    flex-basis: 48%; /* Ajusta según tus necesidades */
+  }
+  
+  .right {
+    flex-basis: 48%; /* Ajusta según tus necesidades */
+  }
+  
+  .PreguntasFrecuentesContainer {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .PreguntasFrecuentesContainer h2 {
+    text-align: center;
+  }
+  
+  .preguntasFrecuentes {
+    padding: 25px;
+    text-align: center;
+  }
+  
+  /* Nueva clase para el contenedor de las preguntas */
+  .preguntasContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 16px; /* Espaciado entre preguntas */
+  }
+  
+  .pregunta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .preguntaHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .preguntaHeader h3 {
+    margin: 0;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+  .respuesta {
+    padding: 12px;
+    display: none;
+    background-color: #fff;
+  }
+  
+  .respuesta p {
+    margin: 0;
+  }
+  
+  /* Estilos para la versión expandida de la pregunta */
+  .pregunta.expandida .respuesta {
+    display: block;
+  }
+  

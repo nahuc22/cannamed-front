@@ -1,0 +1,169 @@
+.productContainer {
+  margin-top: 50px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productContainerHeader {
+  margin-top: 15px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productContainerHeader h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.headerItem {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cardLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: calc(33.33% - 250px);
+  height: 500px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  position: relative;
+  background-color: #000000d7;
+}
+
+
+
+.card:hover .productTitle {
+  transform: translate(-4rem, -3.5rem);
+  text-decoration: none;
+}
+
+.card:hover .productPrice {
+  transform: translate(-5.5rem, -4.5rem);
+  text-decoration: none;
+}
+
+.card:hover .productImage {
+  transform: translate(0rem, -5rem);
+}
+
+.productTitle,
+.productDescription,
+.productPrice {
+  transition: all 0.4s ease-in-out;
+  display: block;
+}
+
+.productImage {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 30px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.productInfo {
+  font-family: 'Poppins';
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.productTitle {
+  font-family: 'Poppins';
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px; /* Ajustable según tu card */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productDescription {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.productPrice {
+  font-family: 'Poppins';
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px; /* Ajustable también */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productDescription,
+.productAddToCart {
+  font-family: 'Poppins';
+  opacity: 0; /* Los hace invisibles */
+  transform: translate(0rem, 6rem);  /* Los mueve fuera de la vista hacia abajo */
+  transition: all 0.4s ease-in-out;  /* Transición suave */
+  color: white
+}
+
+/* Posicionar .productCta en la parte inferior pero más arriba */
+.productCta {
+  position: absolute;
+  left: 48%;
+  transform: translate(-50%, 150px); /* Lo oculta inicialmente y lo mueve hacia abajo */
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Al hacer hover en la tarjeta, sube el botón */
+.card:hover .productCta {
+  opacity: 1;
+  transform: translate(-50%, -100px); /* Lo sube a su posición original */
+}
+
+.productAddToCart {
+  background-color: #000000;
+  color: white;
+  /* padding: 8px 15px; */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.productAddToCart:hover {
+  background-color: #4a0aad;
+  transform: translateY(-2px);
+}
+
+.card:hover .productDescription,
+.card:hover .productAddToCart {
+  opacity: 1;  /* Los hace visibles */
+  transform: translateY(0);  /* Los mueve hacia su posición original */
+}
+.noProductsMessage {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2rem auto;
+  color: #000000;
+  margin-top: 7%;
+}

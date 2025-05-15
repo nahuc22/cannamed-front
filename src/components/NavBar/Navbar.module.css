@@ -1,0 +1,88 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;  /* Asegura que el logo y la navegación estén alineados */
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Espaciado interno */
+  z-index: 1;
+}
+
+.logo {
+  max-width: 120px; /* Tamaño del logo */
+  height: auto;
+}
+
+.navbar {
+  padding: 15px 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.nav-item {
+  margin-right: 20px; /* Menos margen para más espacio */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  /* font-weight: bold; */
+}
+
+.active-link {
+  color: #000;
+}
+
+/* 🔥 ESTILOS RESPONSIVE */
+@media (max-width: 910px) {
+  .container {
+    flex-direction: column; /* Elementos en columna en pantallas pequeñas */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Cambia a vertical */
+    align-items: center;
+    display: none; /* Oculta el menú por defecto */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro con transparencia */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex; /* Muestra el menú cuando se activa */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+}
