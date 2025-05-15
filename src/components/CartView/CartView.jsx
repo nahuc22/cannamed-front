@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import styles from './cartView.module.css';
+import styles from './CartView.module.css';
 import { getCart, removeFromCart, increaseQuantity, decreaseQuantity } from '../../redux/actions/cartActions';
 import { createOrder } from '../../redux/actions/orderActions';
 import { Trash, Plus, Minus } from "lucide-react";
