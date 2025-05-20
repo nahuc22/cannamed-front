@@ -6,7 +6,7 @@ export const POST_PRODUCT = "POST_PRODUCT";
 export const getAllProduct = () => {
     return async function (dispatch) {
       try {
-        const apiData = await axios.get("http://localhost:3001/products");
+        const apiData = await axios.get("https://cannamed-back.onrender.com/products");
         const products = apiData.data;
         dispatch({ type: GET_ALL_PRODUCT, payload: products });
       } catch (error) {}
