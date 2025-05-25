@@ -81,7 +81,7 @@
   transform: translateY(-5px);
 }
 
-.productCard img {
+.productCard .img {
   max-width: 100%;
   height: auto;
 }

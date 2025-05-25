@@ -2,14 +2,14 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar/NavBarPrueba';
 import PasarelaPago from './components/PasarelaPago/PasarelaPago';
 
 import { Home, Landing, Form, Detail, Order } from './views/index';
 import { checkAuth } from './redux/actions/authActions';
 
 import style from './App.module.css';
-import Product from './components/Product/Product';
+import Product from './components/Product/ProductGrid';
 
 function App() {
   const location = useLocation();
@@ -38,3 +38,4 @@ function App() {
 }
 
 export default App;
+  

@@ -26,7 +26,7 @@ const carouselImages = [image1, image2, image3, image4];
       <ProductContainer/>
       {/* <PreguntasFrecuentes/> */}
       <Sheet/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   ) 
 }

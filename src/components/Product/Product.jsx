@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Product.module.css';
 import { useSelector } from 'react-redux';
 
@@ -8,7 +7,6 @@ const Products = () => {
   console.log(products)
   return (
     <div className={styles.container}>
-      
       {/* HERO */}
       <section className={styles.hero}>
         <h1 className={styles.heroTitle}>Shop</h1>
