@@ -30,12 +30,13 @@
   width: 100%;
   z-index: 3; /* Asegura que todo el contenido esté sobre la máscara */
   transition: all 0.2s ease-in-out;
+  border: solid 4px red;
 }
 .containerLeft {
   flex: 1;
-  max-height: 600px;
+  max-height: 500px;
   max-width: 600px;
-  margin: 50px 0 0 50px;
+  padding-top: 2.5rem;
 }
 
 .h1Style {
@@ -162,7 +163,7 @@
   }
 
   .containerRight {
-    height: 500px;
+    min-height: 500px;
     min-width: 400px;
     margin: 0 0 0 80px;
   }
@@ -214,6 +215,18 @@
     max-width: 100%; /* Ajusta el ancho al 100% */
     text-align: center; /* Centra el texto si es necesario */
   }
+
+    .h1Style {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.25rem; /* Tamaño de fuente grande */
+      font-weight: bold;
+      color: white;
+      line-height: 1.5; /* Mejora la separación de las líneas */
+      text-align: justify; /* Alineación de texto más limpia */
+      margin-bottom: 1.5rem; /* Espacio al final del título */
+      word-wrap: break-word; /* Permite que el texto se ajuste al contenedor */
+      }
+
 
   .containerRight {
     margin: 20px 0 0 0; /* Espaciado entre los contenedores */

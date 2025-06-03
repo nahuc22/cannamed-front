@@ -4,7 +4,7 @@
   width: 100%;
   background-color: transparent;
   color: white;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,14 +26,14 @@
 }
 
 .logo {
-  height: 100px;
+  height: 70px;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   margin: 0;
   padding: 0;
 }
@@ -48,7 +48,7 @@
   text-decoration: none;
   transition: color 0.4s ease;
   font-weight: 700;
-  font-size:1.25rem
+  font-size:1rem
 }
 
 .navLinkScrolled {
